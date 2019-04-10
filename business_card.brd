@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -69,6 +69,7 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 </layers>
 <board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyY2JhMjkx" projecturn="a.cGVyc29uYWw6dWUyY2JhMjkxIzIwMTkwNDEwMTg3NzQ0MTU2" f3durn="urn:adsk.wipprod:dm.lineage:SOlcn7ZQRfqYPUdTPqmXGA" pcbguid="0db0e083-741b-459a-a754-66b93a197f74" lastpulledtime="" lastsyncedchangeguid="f2e14ce1-32d0-5768-806b-613ee49a96ef"/>
 <plain>
 <wire x1="86.36" y1="0" x2="2.54" y2="0" width="0.1524" layer="20"/>
 <wire x1="2.54" y1="0" x2="0" y2="2.54" width="0.1524" layer="20" curve="-90"/>
@@ -78,18 +79,18 @@
 <wire x1="86.36" y1="50.8" x2="88.9" y2="48.26" width="0.1524" layer="20" curve="-90"/>
 <wire x1="88.9" y1="48.26" x2="88.9" y2="2.54" width="0.1524" layer="20"/>
 <wire x1="88.9" y1="2.54" x2="86.36" y2="0" width="0.1524" layer="20" curve="-90"/>
-<text x="3.81" y="19.05" size="2.286" layer="25">Tomasz Lewicki
-Robotics &amp; AI 
+<text x="3.81" y="19.05" size="1.778" layer="25">Robotics &amp; AI Research Assistant
 San Jose State Univeristy</text>
-<text x="3.81" y="1.27" size="1.778" layer="21">email:
+<text x="3.81" y="2.54" size="1.778" layer="21">email:
 website:
 github:
 tel:
 </text>
-<text x="13.97" y="3.81" size="1.778" layer="21">tomasz.lewicki@sjsu.edu
+<text x="15.24" y="5.08" size="1.778" layer="21">tomasz.lewicki@sjsu.edu
 t.lewicki.com
 github.com/tomek-l
-+1 669 350 6864</text>
++1 669 350 xx xx</text>
+<text x="3.81" y="29.21" size="3.556" layer="25">Tomasz Lewicki</text>
 </plain>
 <libraries>
 </libraries>
@@ -631,9 +632,9 @@ design rules under a new name.</description>
 </signal>
 </signals>
 <mfgpreviewcolors>
-<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
-<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
-<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8000000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFFFFFF"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF000000"/>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
@@ -643,6 +644,11 @@ design rules under a new name.</description>
 <note version="6.3" minversion="6.2.2" severity="warning">
 Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
 </note>
 </compatibility>
 </eagle>
